@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paolo Gómez Manrique</title>
+    <title>Francisco Acosta Candia</title>
     <style>
         * {
             margin: 0;
@@ -13,36 +13,54 @@
         }
 
         body {
-            background-color: #ffffff;
+            background-color: #fefefe;
             color: #ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            background-image: url('https://wallpapers.com/images/high/4k-programming-digital-world-map-6cm23bhnci86c5w5.webp');
+            background-image: url('https://images.pexels.com/photos/1303097/pexels-photo-1303097.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* ❄️ NIEVE */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: url("https://i.gifer.com/Yg0i.gif");
+            opacity: 0.25;
+            z-index: 1;
         }
 
         header {
             padding: 50px 0;
-            background-color: #000000;
+            background-color: rgba(150, 0, 0, 0.9);
             background-size: cover;
             background-position: center;
             width: 100%;
             color: #ffffff;
-            border-bottom: 5px solid #4072c7;
+            border-bottom: 5px solid #0f8a0f;
+            position: relative;
+            z-index: 2;
         }
 
         header h1 {
             font-size: 3em;
             font-weight: bold;
-            color: #4072c7;
-            text-shadow: 2px 2px #a685f7;
+            color: #ffd700;
+            text-shadow: 2px 2px #0f8a0f;
         }
 
         header p {
             font-size: 1.2em;
             margin-top: 10px;
-            color: #4072c7;
+            color: #ffffff;
         }
 
         .main-content {
@@ -53,20 +71,23 @@
             max-width: 1200px;
             margin: 30px 0;
             gap: 20px;
+            position: relative;
+            z-index: 2;
         }
 
         .about-me {
-            background-color: #191c19;
+            background-color: rgba(0, 80, 0, 0.85);
             padding: 30px;
             width: 45%;
             border-radius: 10px;
-            border: 2px solid #4072c7;
+            border: 2px solid #ffd700;
             position: relative;
             text-align: left;
+            color: white;
         }
 
         .about-me:before {
-            content: "🖱️";
+            content: "🎅";
             position: absolute;
             top: -20px;
             left: 10px;
@@ -74,7 +95,7 @@
         }
 
         .about-me:after {
-            content: "⌨️";
+            content: "🎄";
             position: absolute;
             top: -20px;
             right: 10px;
@@ -83,7 +104,7 @@
 
         .about-me h2 {
             font-size: 2.5em;
-            color: #4072c7;
+            color: #ffd700;
             margin-bottom: 20px;
         }
 
@@ -96,7 +117,7 @@
             font-size: 1em;
             margin-top: 20px;
             padding: 20px;
-            background-color: #191c19;
+            background-color: rgba(0, 60, 0, 0.7);
             border-radius: 10px;
         }
 
@@ -106,30 +127,31 @@
 
         .courses {
             width: 45%;
-            background-color: #191c19;
+            background-color: rgba(80, 0, 0, 0.85);
             padding: 30px;
             border-radius: 10px;
-            border: 2px solid #4072c7;
+            border: 2px solid #ffd700;
             text-align: left;
+            color: white;
         }
 
         .courses h2 {
             font-size: 2.5em;
-            color: #4072c7;
+            color: #ffd700;
             margin-bottom: 20px;
         }
 
         .course-item {
             margin-bottom: 20px;
             padding: 15px;
-            background-color: #191c19;
+            background-color: rgba(60, 0, 0, 0.8);
             border-radius: 10px;
-            border: 1px solid #4072c7;
+            border: 1px solid #ffd700;
             position: relative;
         }
 
         .course-item:before {
-            content: "💻";
+            content: "🎁";
             position: absolute;
             top: -10px;
             left: -10px;
@@ -137,7 +159,7 @@
         }
 
         .course-item:after {
-            content: "👨🏻‍💻";
+            content: "✨";
             position: absolute;
             bottom: -10px;
             right: -10px;
@@ -145,7 +167,7 @@
         }
 
         .course-item h3 {
-            color: #4072c7;
+            color: #ffd700;
             margin-bottom: 10px;
         }
 
@@ -165,16 +187,20 @@
             margin-top: 50px;
             padding: 20px;
             font-size: 0.9em;
-            color: #ccc;
+            color: #fff;
+            background-color: rgba(150, 0, 0, 0.9);
+            width: 100%;
+            position: relative;
+            z-index: 2;
         }
 
         footer:before {
-            content: "💾";
+            content: "🎄";
             margin-right: 10px;
         }
 
         footer:after {
-            content: "💿";
+            content: "🎅";
             margin-left: 10px;
         }
     </style>
@@ -182,73 +208,63 @@
 <body>
 
     <header>
-        <h1>Paolo Gómez Manrique</h1>
-        <p>Ciencia de la Computación.</p>
+        <h1>Francisco Acosta Candia</h1>
+        <p>Administración de Negocios</p>
     </header>
 
     <div class="main-content">
         <section class="about-me">
             <h2>Presentación</h2>
-            <p>Mi nombre es Paolo Gómez Manrique. Soy estudiante de Ciencia de la Computación.</p>
+            <p>Mi nombre es Francisco Acosta Candia, tengo 18 años y estudio la carrera de Administración de Negocios. Actualmente curso el tercer semestre.</p>
+            
             <div class="info">
                 <div>
-                    <p><strong>Nombre:</strong> Paolo Gómez Manrique</p>
+                    <p><strong>Nombre:</strong> Francisco Acosta Candia</p>
                     <p><strong>Edad:</strong> 18</p>
-                    <p><strong>Correo:</strong> paolo.gomez@ucsp.edu.pe</p>
+                    <p><strong>Carrera:</strong> Administración de Negocios</p>
                 </div>
                 <div>
                     <p><strong>Semestre:</strong> Tercero</p>
-                    <p><strong>Ubicación:</strong> Arequipa, Perú</p>
+                    <p><strong>Ubicación:</strong> Perú</p>
                 </div>
             </div>
         </section>
 
         <section class="courses">
             <h2>Cursos</h2>
+
             <div class="course-item">
                 <h3>Semestre 1</h3>
                 <ul>
                     <li>Contabilidad de Administración</li>
                     <li>Fundamentos de Administración</li>
                     <li>Economía General</li>
-                    <li>Programación de videojuegos</li>
-                    <li>Metodología del Estudio</li>
-                    <li>Introducción a la Vida Universitaria</li>
                 </ul>
             </div>
+
             <div class="course-item">
                 <h3>Semestre 2</h3>
                 <ul>
-                    <li>Matemática 2</li>
-                    <li>Estructuras Discretas 2</li>
-                    <li>Cálculo 1</li>
-                    <li>Introducción a la Filosofía</li>
-                    <li>Ciencia de la Computación</li>
-                    <li>Introducción a la Ciencia de la Computación</li>
+                    <li>Derecho Empresarial</li>
+                    <li>Fundamentos de Marketing</li>
+                    <li>Pensamiento Crítico e Innovador</li>
                 </ul>
             </div>
+
             <div class="course-item">
                 <h3>Semestre 3</h3>
                 <ul>
-                    <li>Cálculo 2</li>
-                    <li>Álgebra Abstracta</li>
-                    <li>Estadística y Probabilidades</li>
-                    <li>Ciencia de la Computación 2</li>
-                    <li>Desarrollo Basado en Plataformas</li>
-                    <li>Arquitectura de Computadores</li>
+                    <li>Análisis Financiero</li>
+                    <li>Comportamiento del Consumidor</li>
+                    <li>Pensamiento Computacional</li>
                 </ul>
             </div>
-            <div class="course-item">
-                <h3>Semestre 4</h3>
-                <ul>
-                    <li>ME SALÍ :)</li>
-                </ul>
-            </div>
+
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 Paolo Gómez Manrique. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Francisco Acosta Candia. Todos los derechos reservados.</p>
     </footer>
 
 </body>
